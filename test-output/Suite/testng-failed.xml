@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testscripts.smoke.ui.LibrayTest">
+      <class name="testscripts.smoke.functional.LoginTest">
         <methods>
+          <include name="verifyLoginForValidCredentials"/>
           <include name="setup"/>
-          <include name="verifyQuestionCount"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- testscripts.smoke.ui.LibrayTest -->
+      </class> <!-- testscripts.smoke.functional.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

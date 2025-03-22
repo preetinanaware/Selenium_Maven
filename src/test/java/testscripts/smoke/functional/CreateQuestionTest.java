@@ -1,5 +1,6 @@
 package testscripts.smoke.functional;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -8,6 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import constants.FilePath;
 import pages.CreateQuestionPage;
 import testscripts.TestBase;
 import utility.ExcelOperations;
@@ -185,6 +187,6 @@ public class CreateQuestionTest extends TestBase {
 	
 	@DataProvider
 	public Object[][] getDataForCreateQuestion() throws Exception{
-		return ExcelOperations.getSheetData("src/test/resources/testdata/CreateQuestion.xlsx", "Data");
+		return ExcelOperations.getSheetData(FilePath.CREATEQUESTION_SHEET, "Data");
 	}
 }

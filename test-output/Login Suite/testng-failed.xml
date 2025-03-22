@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Login Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Login Test Cases(failed)">
     <classes>
       <class name="testscripts.smoke.functional.LoginTest">
         <methods>
@@ -11,5 +11,5 @@
         </methods>
       </class> <!-- testscripts.smoke.functional.LoginTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Login Test Cases(failed) -->
+</suite> <!-- Failed suite [Login Suite] -->

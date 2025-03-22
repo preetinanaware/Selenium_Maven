@@ -25,8 +25,9 @@ public class TestBase {
 	public void tearDown(ITestResult result) {
 		if(result.getStatus() == 2) {
 			ControlActions.takeScreenshot(result.getName()+"_"+ DateTimeUtil.getTimeStamp());
+			ControlActions.saveScreenshot();
 		}
 		System.out.println("CLEAN UP - Close browser");
-		//ControlActions.closeBrowser();
+		ControlActions.closeBrowser();
 	}
 }
